@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <Box display='flex' justifyContent='space-between' bg='pink'>
+    <Box display='flex' justifyContent='space-between' bg='pink' border='10px red solid'>
       <Box>
         <Flex bg='#fff'>
           <Image src={logo} alt='logo' />
@@ -14,7 +14,7 @@ const Navbar = () => {
       </Box>
       <Box >
         <Flex>
-          <Breadcrumb bg='#000' separator=' ' p='1'>
+          <Breadcrumb separator=' ' p='1'>
             <BreadcrumbItem gap='2'>
               <Button bg='orange.300' size='md' fontFamily='sans-serif'>
                 Home
