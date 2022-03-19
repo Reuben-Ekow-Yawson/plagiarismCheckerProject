@@ -1,0 +1,23 @@
+.navBar{
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', serif;
+    width: 50%;
+    /* background-color: rgb(211, 188, 166); */
+    border-radius: 7px;
+    margin-left: 300px;
+    margin-right: 300px;
+    align-items: center;
+    gap: 20px;
+}
+img{
+    display: flex;
+    width: 200px;
+}
+.navList:hover{
+    color: rgb(182, 140, 26);
+    background-color: aquamarine;
+    text-decoration: none;
+}
