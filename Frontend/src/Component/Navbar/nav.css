@@ -1,0 +1,25 @@
+.navBar{
+
+}
+img{
+    display: flex;
+    width: 200px;
+}
+.navList:hover{
+    color: rgb(182, 140, 26);
+    background-color: aquamarine;
+    text-decoration: none;
+}
+.DBnav{
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border: 1px blue solid;
+    opacity: 12;
+    background-color: brown;
+}
