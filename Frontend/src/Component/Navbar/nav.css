@@ -13,6 +13,7 @@ img{
 .DBnav{
     height: 100%;
     padding: 0px 20px;
+    margin-right: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,6 +21,4 @@ img{
     top: 0;
     z-index: 999;
     border: 1px blue solid;
-    opacity: 12;
-    background-color: brown;
 }
