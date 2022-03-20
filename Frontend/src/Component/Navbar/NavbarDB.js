@@ -9,12 +9,12 @@ const NavbarDB = () => {
     
     <Box className='DBnav'>
       <Box>
-        <Flex bg='#fff'>
-          <Image src={logo} alt='logo' />
+        <Flex >
+          <Image ml='0px' src={logo} alt='logo' />
         </Flex>
       </Box>
       <Box >
-        <Flex>
+        <Flex mr='0px'>
           <Breadcrumb separator=' ' p='1'>
             <BreadcrumbItem gap='2'>
               <Button bg='orange.300' size='md' fontFamily='sans-serif'>
