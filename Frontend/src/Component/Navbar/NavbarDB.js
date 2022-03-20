@@ -7,7 +7,7 @@ import logo from './Logo.png';
 const NavbarDB = () => {
   return (
     
-    <Box className='DBnav'>
+    <Box className='Dashboardnav'>
       <Box>
         <Flex >
           <Image ml='0px' src={logo} alt='logo' />
