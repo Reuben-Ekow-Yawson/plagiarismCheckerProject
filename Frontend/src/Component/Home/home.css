@@ -1,0 +1,11 @@
+body{
+    width: 100%;
+}
+textarea{
+    color: black;
+}
+.heading{
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 2px;
+}
