@@ -3,8 +3,11 @@ import { Box, Breadcrumb, BreadcrumbItem, Button, Flex, Image } from '@chakra-ui
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import './nav.css';
 import logo from './Logo.png';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <Box display='flex' justifyContent='space-between' bg='pink' border='10px red solid'>
       <Box>
@@ -16,10 +19,18 @@ const Navbar = () => {
         <Flex>
           <Breadcrumb separator=' ' p='1'>
             <BreadcrumbItem gap='2'>
-              <Button bg='orange.300' size='md' fontFamily='sans-serif'>
-                Home
-              </Button>
-              <Button bg='orange.300' size='md' fontFamily='sans-serif'>
+              {/* <Link to="/home"> */}
+                <Button bg='orange.300' size='md' fontFamily='sans-serif'
+                  onClick={() =>{
+                    navigate("/")
+                  }}>
+                  Home
+                </Button>
+              {/* </Link> */}
+              <Button bg='orange.300' size='md' fontFamily='sans-serif'
+                onClick={() =>{
+                  navigate("/Login")
+                }} >
                 LogIn
               </Button>
               <ColorModeSwitcher justifySelf="flex-end" />
