@@ -12,6 +12,7 @@ import {
   import "./login.css";
   import { BsEye } from "react-icons/bs";
   import { RiEyeCloseLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const [input, setInput] = useState("");
@@ -20,6 +21,8 @@ const Login = () => {
 
     const [show, setShow] = useState(false);
     const handleClick = () => setShow(!show);
+
+    const navigate = useNavigate();
 
   return (
     <Center h="100vh">
@@ -55,7 +58,11 @@ const Login = () => {
           </InputRightElement>
         </InputGroup>
         <Center>
-          <Button bg='orange.500' size='md' mt={8}>Submit</Button>
+          <Button bg='orange.500' size='md' mt={8}
+            onClick={() =>{
+              navigate("/dashboard")
+            }}
+          >Submit</Button>
         </Center>
       </FormControl>
     </Center>
